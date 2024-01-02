@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>P4</title>
+		<style>
+		*{
+		padding:0px;
+		margin:0px;
+		}
+			#navbar{
+			position: fixed;
+			width: 100%;
+			background-color: black;
+			color: white;
+			text-decoraction: none;
+			padding:30px;
+			}
+			li{
+			display: inline-block;
+			margin-right: 140px;
+			}
+			a{
+			text-decoration: none;
+			color: white;
+			}
+			/*main*/
+			.box{
+				height: 150px;
+				width: 150px;
+				border: 4px solid black;
+				display: inline-block;
+				margin:4px;
+			}
+			#box1{
+				background-color: rgba(255,00,00,0.5);
+			}
+			#box2{
+				background-color: rgba(00,25500,0.5);
+			}
+			#box3{
+				background-color: rgba(00,00,255,0.5);
+			}
+			#box4{
+				background-color: rgba(00,155,155,0.5);
+			}
+			footer{
+				color:white;
+				background-color: black;
+				text-align: center;
+				padding: 12px;
+				font-width: 900;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul id="navbar">
+			<li id="logo" class="l1"><a href="#" style="color:yellow;">amazon.com</a></li>
+			<li class="l1"><a href="#">Account</a></li>
+			<li class="l1"><a href="#">MyCart</a></li>
+			<li class="l1"><a href="#">ContectUs</a></li>
+			<li class="l1"><input type="search" style="border-radius: 30px;" placeholder="Search here" id="search-bar">  <input type="button" style="background-color:yellow; border-radius: 20px;" value="Search" id="search-button"></li>
+			</ul>
+		</nav>
+		<main style="padding-bottom: 500px;padding-top:100px;">
+			<div id="box1" class="box"></div>
+			<div id="box2" class="box"></div>
+			<div id="box3" class="box"></div>
+			<div id="box4" class="box"></div>
+		</main>
+		<footer>This is Footer.</footer>
+	</body>
+</html>

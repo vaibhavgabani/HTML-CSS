@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>rectangle</h2>
+    <canvas id="mycanvas" height="300" width ="1200"></canvas>
+    <h2>line</h2>
+    <canvas id="lineq" height="300" width="900" style="border: 2px solid black;"></canvas>
+    <script>
+        var canvas =document.getElementById("mycanvas");
+        var crt =canvas.getContext("2d");
+        
+        crt.fillStyle = "#FF0000";
+        crt.fillRect(0,0,250,250);
+    </script>
+</body>
+</html>

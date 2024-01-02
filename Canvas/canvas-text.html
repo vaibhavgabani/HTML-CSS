@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="text" height="420" width="420" style="border: 2px solid black;"></canvas>
+    <script>
+        var text=document.getElementById("text");
+        var mrc=text.getContext("2d");
+
+        mrc.font="20px arial";
+        mrc.fillText("hellow",120,120);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="ga" height="300" width="600" style="border: 2px solid black;"></canvas>
+    <script>
+        // var ga=document.getElementById("ga");
+        // var ctx=ga.getContext("2d");
+        // var gradient=ctx.createLinearGradient(0,0,200,0);
+        // gradient.addColorStop(0,"red");
+        // gradient.addColorStop(1,"blue");
+        
+        // ctx.fillStyle=gradient;
+        // ctx.fillRect(0,0,200,200);
+        var canvas =document.getElementById("ga");
+        var ctx =canvas.getContext("2d");
+        var gradient=ctx.createLinearGradient(0,0,200,12);
+        gradient.addColorStop(0,"red");
+        gradient.addColorStop(1,"White");
+
+        ctx.fillStyle = gradient;
+        ctx.fillRect(12,12,120,120);
+    </script>
+</body>
+</html>

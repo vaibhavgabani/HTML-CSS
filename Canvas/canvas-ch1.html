@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><canvas id="rect" height="300" width="600" style=" border:2px solid black;"></canvas></div>
+    <div><canvas id="liti" height="300" width="600"style=" border:2px solid black;"></canvas></div>
+    <div><canvas id="cri" height="300" width="600"style=" border:2px solid black;"></canvas></div>
+    <div><canvas id="text" height="300" width="600"style=" border:2px solid black;"></canvas></div>
+    <div><canvas id="gra" height="300" width="600"style=" border:2px solid black;"></canvas></div>
+    <div><canvas id="gcri" height="300" width="600"style=" border:2px solid black;"></canvas></div>
+    <script>
+        //rect
+        var rect=document.getElementById("rect");
+        var rect1=rect.getContext("2d");
+
+        rect1.fillStyle = "#FF0000";
+        rect1.fillRect(10,10,120,120);
+        //line
+        var liti=document.getElementById("liti");
+        var liti1=liti.getContext("2d");
+        
+        liti1.moveTo(20,20);
+        liti1.lineTo(120,120);
+        liti1.stroke();
+        //cri
+        var cri=document.getElementById("cri");
+        var cri1=cri.getContext("2d");
+        
+        cri1.beginPath();
+        cri1.arc(90,90,80,0,2*Math.PI);
+        cri1.stroke();
+        //text
+        var text=document.getElementById("text");
+        var text1=text.getContext("2d");
+
+        text1.font="40px arial";
+        text1.fillStyle="red";
+        text1.fillText("Hellow" , 220,220);
+        text1.strokeStyle="red";
+        text1.strokeText("Hellow" , 100,100);
+        //gradient rect
+        var canvas=document.getElementById("gra");
+        var gre=canvas.getContext("2d");
+        var gradientrect=gre.createLinearGradient(0,0,200,0);
+        gradientrect.addColorStop(0,"red");
+        gradientrect.addColorStop(1,"blue");
+
+        gre.fillStyle = gradientrect;
+        gre.fillRect(10,10,120,120);
+        //gradient cri
+        var cri= document.getElementById("gcri");
+        var gcri=cri.getContext("2d");
+        var crig=gcri.createLinearGradient(0,0,200,0);
+        crig.addColorStop(0,"red");
+        crig.addColorStop(0,"blue");
+
+        gcri.fillStyle=crig;
+        gcri.brgainPath();
+        gcri.arc(20,20,40,0,2*Math.PI); 
+        gcri.stroke;
+    </script>
+</body>
+</html> 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>P7</title>
+		<style>
+			div{
+			height: 300px;
+			width:300px;
+			background-color: pink;
+			border: 4px solid black;
+			border-radius:40px;
+			}
+			@media(max-width:300px){
+				div{
+				background-color:green;
+				}
+			}
+			@media(min-width:300px) and (max-width:400px){
+				div{
+				background-color:darkpink;
+				}
+			}
+			@media(min-width:400px) and (max-width:600px){
+				div{
+				background-color:red;
+				}
+			}
+			@media(min-width:600px){
+				div{
+				background-color:blue;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
